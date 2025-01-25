@@ -92,7 +92,7 @@ in
   containers.nginx = {
     name = "nginx";
     # copyToRoot = null;
-    startupCommand = "pm-up";
+    startupCommand = "process-compose up nginx";
   };
   services.nginx = {
     enable = nginx.enable;
